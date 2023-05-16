@@ -1,0 +1,22 @@
+<!-- top10-punches-weekly.component.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Top 10 Punches Weekly</h4>
+          <select [(ngModel)]="selectedChartType" (change)="generateChart()">
+            <option value="pie">Pie</option>
+            <option value="column">Column</option>
+            <option value="bar">Bar</option>
+            <option value="line">Line</option>
+            <option value="area">Area</option>
+          </select>
+        </div>
+        <div class="card-body">
+          <div id="chart-containerPie"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

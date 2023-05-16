@@ -1,0 +1,11 @@
+/* top10-punches-quarterly.component.scss*/
+.widget {
+  width: 50%;
+  height: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.widget.right {
+  margin-left: 20px;
+}

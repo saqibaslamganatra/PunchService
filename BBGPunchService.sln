@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBGPunchService", "BBGPunchService\BBGPunchService.csproj", "{B969C65C-DFED-486F-B789-BAD247A9349D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{539AF861-0AC1-484B-A41F-28107A6235CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D178D8B9-1751-4C5C-97B1-8A4FA6085EF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Worker", "Worker", "{AEF76623-DFAC-4CC8-B734-CF564087BFA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBGPunchService.Core", "BBGPunchService.Core\BBGPunchService.Core.csproj", "{92AB358C-A0B2-43A1-B1DD-F6EE30BD2F95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8BA2FF3A-5E52-47F6-9198-23385F31EDAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBGPunchService.Source.Data", "BBGPunchService.SourceDbContext\BBGPunchService.Source.Data.csproj", "{80393F40-2EF0-460D-8AE7-9E5D5EC715E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBGPunchService.Target.Data", "BBGPunchService.TargetDbContext\BBGPunchService.Target.Data.csproj", "{558EE3DC-7334-4899-8BCB-E170AE55CC17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBGPunchService.Infrastructure", "BBGPunchService.Infrastructure\BBGPunchService.Infrastructure.csproj", "{2D9658AA-45A8-477C-889E-795038A00EC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{37A3CEA5-CC88-48B3-9522-6D91C30434D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{BE319B88-834F-4C14-BCFF-3D24F86A2A36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BBGPunchService.Api", "BBGPunchService.Api\BBGPunchService.Api.csproj", "{BF016E3B-F764-43F9-B942-990EEED10C17}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BBGPunchService.Web", "BBGPunchService.Web\", "{67E777D5-8040-4265-94A6-1F1CFDCDC807}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51076"
+		Debug.AspNetCompiler.PhysicalPath = "BBGPunchService.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51076\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51076"
+		Release.AspNetCompiler.PhysicalPath = "BBGPunchService.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51076\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51076"
+		SlnRelativePath = "BBGPunchService.Web\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B969C65C-DFED-486F-B789-BAD247A9349D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B969C65C-DFED-486F-B789-BAD247A9349D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B969C65C-DFED-486F-B789-BAD247A9349D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B969C65C-DFED-486F-B789-BAD247A9349D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92AB358C-A0B2-43A1-B1DD-F6EE30BD2F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AB358C-A0B2-43A1-B1DD-F6EE30BD2F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AB358C-A0B2-43A1-B1DD-F6EE30BD2F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AB358C-A0B2-43A1-B1DD-F6EE30BD2F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80393F40-2EF0-460D-8AE7-9E5D5EC715E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80393F40-2EF0-460D-8AE7-9E5D5EC715E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80393F40-2EF0-460D-8AE7-9E5D5EC715E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80393F40-2EF0-460D-8AE7-9E5D5EC715E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558EE3DC-7334-4899-8BCB-E170AE55CC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558EE3DC-7334-4899-8BCB-E170AE55CC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558EE3DC-7334-4899-8BCB-E170AE55CC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558EE3DC-7334-4899-8BCB-E170AE55CC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D9658AA-45A8-477C-889E-795038A00EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9658AA-45A8-477C-889E-795038A00EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9658AA-45A8-477C-889E-795038A00EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9658AA-45A8-477C-889E-795038A00EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF016E3B-F764-43F9-B942-990EEED10C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF016E3B-F764-43F9-B942-990EEED10C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF016E3B-F764-43F9-B942-990EEED10C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF016E3B-F764-43F9-B942-990EEED10C17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E777D5-8040-4265-94A6-1F1CFDCDC807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E777D5-8040-4265-94A6-1F1CFDCDC807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E777D5-8040-4265-94A6-1F1CFDCDC807}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E777D5-8040-4265-94A6-1F1CFDCDC807}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B969C65C-DFED-486F-B789-BAD247A9349D} = {AEF76623-DFAC-4CC8-B734-CF564087BFA9}
+		{92AB358C-A0B2-43A1-B1DD-F6EE30BD2F95} = {539AF861-0AC1-484B-A41F-28107A6235CE}
+		{80393F40-2EF0-460D-8AE7-9E5D5EC715E1} = {8BA2FF3A-5E52-47F6-9198-23385F31EDAC}
+		{558EE3DC-7334-4899-8BCB-E170AE55CC17} = {8BA2FF3A-5E52-47F6-9198-23385F31EDAC}
+		{2D9658AA-45A8-477C-889E-795038A00EC0} = {D178D8B9-1751-4C5C-97B1-8A4FA6085EF1}
+		{BF016E3B-F764-43F9-B942-990EEED10C17} = {37A3CEA5-CC88-48B3-9522-6D91C30434D4}
+		{67E777D5-8040-4265-94A6-1F1CFDCDC807} = {BE319B88-834F-4C14-BCFF-3D24F86A2A36}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A2D943C-2C45-4C38-B272-6A7C5A40EC56}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,184 @@
+@import '@angular/material/theming';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+/* Variables */
+$primary-color: #007bff;
+$secondary-color: #ffc107;
+$font-family: 'Roboto', sans-serif;
+$box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+
+/* Theme */
+$theme: (
+  primary: $primary-color,
+  accent: $secondary-color,
+  warn: #dc3545,
+  font-family: $font-family,
+  typography: (
+    h1: (
+      font-size: 2.5rem,
+      font-weight: bold,
+      margin: 0 0 16px,
+    ),
+    h2: (
+      font-size: 2rem,
+      font-weight: bold,
+      margin: 0 0 16px,
+    ),
+    h3: (
+      font-size: 1.5rem,
+      font-weight: bold,
+      margin: 0 0 16px,
+    ),
+    h4: (
+      font-size: 1.25rem,
+      font-weight: bold,
+      margin: 0 0 16px,
+    ),
+    h5: (
+      font-size: 1rem,
+      font-weight: bold,
+      margin: 0 0 16px,
+    ),
+    h6: (
+      font-size: 0.875rem,
+      font-weight: bold,
+      margin: 0 0 16px,
+    ),
+    subtitle1: (
+      font-size: 1rem,
+      font-weight: bold,
+      margin: 0 0 16px,
+    ),
+    body1: (
+      font-size: 1rem,
+      margin: 0 0 16px,
+    ),
+    body2: (
+      font-size: 0.875rem,
+      margin: 0 0 16px,
+    ),
+  ),
+);
+
+/* Include Angular Material core styles */
+@include mat-core();
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  border-radius: 4px;
+
+  th {
+    text-align: left;
+    font-weight: bold;
+    color: $primary-color;
+    padding: 16px;
+  }
+
+  td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/* Form field styles */
+.mat-form-field {
+  margin: 8px;
+  font-family: $font-family;
+}
+
+/* Card styles */
+.mat-card {
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px;
+  
+  &__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  &__title {
+    font-size: 1.25rem;
+    margin-left: 16px;
+  }
+}
+
+&__content {
+margin-bottom: 16px;  
+&__subtitle {
+  color: $secondary-color;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+&__text {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+}
+
+&__actions {
+display: flex;
+justify-content: flex-end;
+button {
+  margin-left: 8px;
+}
+}
+}
+
+/* Button styles */
+.mat-raised-button {
+background-color: $primary-color;
+color: #fff;
+padding: 12px 24px;
+border-radius: 4px;
+font-size: 1rem;
+
+&:hover {
+background-color: darken($primary-color, 10%);
+}
+
+&.mat-primary {
+background-color: $primary-color;
+color: #fff;
+}
+
+&.mat-accent {
+background-color: $secondary-color;
+color: #fff;
+}
+
+&.mat-warn {
+background-color: #dc3545;
+color: #fff;
+}
+}
+
+/* Input styles */
+.mat-input-element {
+font-family: $font-family;
+font-size: 1rem;
+}
+
+/* Select styles */
+.mat-select {
+font-family: $font-family;
+font-size: 1rem;
+min-width: 120px;
+}
+
+/* Snackbar styles */
+.mat-snack-bar-container {
+font-family: $font-family;
+font-size: 1rem;
+background-color: #333;
+color: #fff;
+border-radius: 4px;
+box-shadow: $box-shadow;
+}

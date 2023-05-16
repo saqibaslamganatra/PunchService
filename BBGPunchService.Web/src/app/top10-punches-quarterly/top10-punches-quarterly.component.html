@@ -1,0 +1,8 @@
+<!-- top10-punches-quarterly.component.html -->
+<select [(ngModel)]="selectedChartType" (change)="generateChart()">
+  <option value="line">Line</option>
+  <option value="column">Column</option>
+  <option value="bar">Bar</option>
+  <option value="area">Area</option>
+</select>
+<div id="chart-containerQ" style="width: 100%; height: 400px;"></div>

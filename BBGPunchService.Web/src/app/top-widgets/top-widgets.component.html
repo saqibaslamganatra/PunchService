@@ -1,0 +1,18 @@
+<!-- top-widgets.component.html -->
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" fxLayout.lt-md="column" class="widget-container">
+  <mat-card *ngFor="let widget of widgets" class="widget {{ widget.color }}">
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <div class="icon">
+        <fa-icon [icon]="widget.icon"></fa-icon>
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center" class="value">
+        <div class="top">{{ widget.top }}</div>
+        <div class="bottom">{{ widget.bottom }}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-scale-multiple">
+  <p style="color: white">Loading...</p>
+</ngx-spinner>

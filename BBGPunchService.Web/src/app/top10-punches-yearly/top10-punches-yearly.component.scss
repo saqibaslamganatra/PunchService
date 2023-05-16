@@ -1,0 +1,19 @@
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .chart {
+    flex: 1 0 400px;
+    max-width: calc(100% - 1rem);
+  }
+  
+  #column-chart-container,
+  #line-chart-container,
+  #pie-chart-container {
+    height: 400px;
+  }
+  

@@ -1,0 +1,11 @@
+<!-- top10-punches-yearly.component.html -->
+<div class="top10-punches-yearly">
+  <div>
+    <select [(ngModel)]="selectedChartType" (change)="generateCharts()">
+      <option value="column">Column</option>
+      <option value="spline">Spline</option>
+      <option value="pie">Pie</option>
+    </select>
+  </div>
+  <div id="combined-chart-container" style="height: 400px; width: 100%;"></div>
+</div>
